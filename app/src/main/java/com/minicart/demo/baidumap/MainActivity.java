@@ -7,6 +7,7 @@ import android.view.View;
 
 import com.minicart.demo.baidumap.location.LocationActivity;
 import com.minicart.demo.baidumap.map.MapActivity;
+import com.minicart.demo.baidumap.navigation.BlkeRouteActivity;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -24,5 +25,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void joinLocation(View view) {
         startActivity(new Intent(this, LocationActivity.class));
+    }
+
+    public void joinNavigation(View view) {
+        startActivity(new Intent(this, BlkeRouteActivity.class));
     }
 }
